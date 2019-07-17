@@ -16,7 +16,7 @@ app.use(cors());
 app.use(passport.initialize());
 require("./config/passport")(passport);
 
-app.use("/", expres.static("./apidoc"));
+app.use("/", express.static("./apidoc"));
 
 app.use("/api/lessons", lessonsRouter);
 app.use("/api/agendas", agendasRouter);
