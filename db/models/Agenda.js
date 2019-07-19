@@ -3,7 +3,7 @@ const mongoose = require("../connection.js");
 const Schema = mongoose.Schema;
 
 const Agenda = new Schema({
-  date: String,
+  date: Date,
   announcements: String,
   tasks: String,
   shoutOuts: String,
